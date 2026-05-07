@@ -1,0 +1,29 @@
+
+# Depósitos de paquetes
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# Archivos de compilación
+build/
+
+# Android específico
+android/**/generated/
+android/app/debug/
+android/app/release/
+android/local.properties   
+android/bundle/
+*.apk
+*.aab
+*.jks                     
+
+
+# IDEs y Editores
+.idea/
+.vscode/
+*.iml
+
+# Logs y temporales
+*.log
+.DS_Store
