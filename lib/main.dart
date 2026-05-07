@@ -96,7 +96,27 @@ class HomePage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
+
+          ElevatedButton.icon(
+            onPressed: () {
+              debugPrint('¡El botón ha sido presionado correctamente!');
+            },
+            icon: const Icon(Icons.send),
+            label: const Text('Enviar Información'),
+          ),
         ],
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          const snackBar = SnackBar(
+            content: Text('¡Hola! Este es un SnackBar personalizado.'),
+            duration: Duration(seconds: 3),
+            backgroundColor: Colors.indigo,
+          );
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
+        child: const Icon(Icons.info_outline),
       ),
     );
   }
